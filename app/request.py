@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import Article,Source,Headlines,Category
+from .models import Source,Article
 
 # Getting api key
 api_key = None
@@ -9,7 +9,7 @@ cat_url = None
 
 
 def configure_request(app):
-    global api_key, source_url
+    global api_key,cat_url,source_url
     api_key = app.config['NEWS_API_KEY']
     source_url = app.config['NEWS_API_BASE_URL']
     cat_url = app.config['CAT_API_URL']
@@ -73,7 +73,7 @@ def get_category(cat_name):
     return get_cartegory_results
 
 def article_source(id):
-    article_source_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(id,api_key)
+    article_source_url = 'https://newsapi.org/v2/sources?apiKey={}'.format(id,api_key)
     print(article_source_url)
     with urllib.request.urlopen(article_source_url) as url:
         article_source_data = url.read()
