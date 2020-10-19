@@ -11,7 +11,8 @@ cat_url = None
 def configure_request(app):
     global api_key, source_url
     api_key = app.config['NEWS_API_KEY']
-    source_url= app.config['NEWS_API_BASE_URL']
+    source_url = app.config['NEWS_API_BASE_URL']
+    cat_url = app.config['CAT_API_URL']
     
 
 
@@ -55,7 +56,7 @@ def process_results(source_list):
 
 def get_category(cat_name):
     '''
-    function that gets the response to the category json
+    Function that gets the response to the category json
     '''
     get_category_url = cat_url.format(cat_name,api_key)
     print(get_category_url)
