@@ -8,7 +8,7 @@ Ryan Munge
 This is an application that will help you list and preview news articles from various sources.
 You can click on an article to get more information about it.
 
-Get to see it [News-App]()
+Get to see it [News-App](https://news-app8.herokuapp.com/)
 
 # User Story
   * See various sources 
