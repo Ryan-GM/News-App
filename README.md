@@ -23,3 +23,10 @@ Get to see it [News-App]()
   * virtual environment
 
 ## Technologies Used
+  * Python 3.7
+  * Flask
+
+## License
+
+* MIT
+* Ryan Munge
