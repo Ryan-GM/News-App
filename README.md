@@ -15,3 +15,11 @@ Get to see it [News-App]()
   * Select a news source and see all news articles
   * See the image, description and time created
   * Click on the article and read the whole article
+
+## Installation
+  ### Prerequisites
+  * python 3.7
+  * pip
+  * virtual environment
+
+## Technologies Used
